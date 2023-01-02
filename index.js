@@ -14,10 +14,10 @@ app.get('/', function (req, res) {
 });
 
 app.get('/api/', function (req, res) {
-    var complexity = 4;
-    var separators = "#.-=+_!$*:~?%^&;";
-    var pattern;
-    var transform;
+  //    var separators = "#.-=+_!$*:~?%^&;";
+    var separators = "-";
+    var pattern = "wswswswswd";
+    var transform = "random";
     response = {
         complexity: req.query.complexity,
         separators: req.query.separators,
@@ -52,7 +52,7 @@ app.get('/api/', function (req, res) {
                 pattern = "wswswswsdd";
                 break;
             case 5:
-                pattern = "wswswswswsd";
+                pattern = "wswswswswd";
                 break;
             case 6:
                 pattern = "ddswswswswswsdd";
