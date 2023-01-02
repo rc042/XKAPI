@@ -14,6 +14,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/api/', function (req, res) {
+    var complexity = 5;
   //    var separators = "#.-=+_!$*:~?%^&;";
     var separators = "-";
     var pattern = "wswswswswd";
