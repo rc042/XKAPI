@@ -89,7 +89,7 @@ app.get('/api/', function (req, res) {
         pattern = newpattern;
         transform = "";
     }
-    res.end(xkpasswd({ separators: separators, pattern: pattern, transform: transform, wordList: path.join(__dirname + '/xkpasswdnet_word_list.json') }));
+    res.end(xkpasswd({ separators: separators, pattern: pattern, transform: transform, wordList: path.join(__dirname + '/xkpasswdnet_word_list_fr.json') }));
 })
 
 var server = app.listen(2410, function () {
