@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+  xkpasswd:
+    image: xkpasswd
+    restart: unless-stopped
+    ports:
+      - "2410:2410"
+    networks:
+      - my_network
+networks:
+    my_network:
+        external: true
